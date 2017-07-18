@@ -1,8 +1,46 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 17px;
+  font-family: 'Work Sans', sans-serif;
+}
+nav {
+  margin: 0;
+  overflow: visible;
+  background-color: white;
+  margin-bottom: 30px;
+  /*align-items: center;*/
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a {
+  color: black;
+  display: block;
+  line-height: 3em;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+.read-more {
+  font-weight: 900;
+  text-decoration:none;;
+}
+
 .project-card {
   position: relative;
   vertical-align: top;
   text-align: left;
-  width: 80%;
+  /*width: 80%;*/
   height: 400px;
   margin: 10px 0;
   border-radius: 6px;
@@ -12,6 +50,12 @@
   display: block;
   overflow: hidden;
 
+
+}
+
+.project-card:hover {
+  -webkit-animation: pulse 1.6s;
+    animation: pulse 1.6s;
 
 }
 
@@ -29,8 +73,8 @@
 
 
 .card-title {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  padding: 37px 31px 25px 30px;
 }
 
 
@@ -39,10 +83,6 @@ h1 {
   font-weight: 200;
 }
 
-h1, h2, p {
-  font-family: 'Work Sans', sans-serif;
-  color: black;
-}
 
 a {
   color: black;
@@ -54,7 +94,8 @@ a {
 }
 
 .welcome {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+  font-size: 3em;
 }
 
 .offset-sm-6 {
@@ -62,18 +103,33 @@ a {
 }
 
 
-.navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-   margin: 50px 130px 50px 130px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
-
-
 .b-box, .lyft, .bmd {
   margin-top: -120px;
+}
+
+
+.container {
+  max-width: 95%;
+}
+
+.lendmate > .card-top {
+  background-color: #D0F5F3;
+}
+
+.bmd > .card-top {
+  background-color: #F4AC4D;
+}
+
+.b-box > .card-top {
+  background-color: #D9B0FC;
+}
+
+.lyft > .card-top {
+  background-color: #D3FCB0;
+}
+
+.card-bottom > p {
+  color: #9B9B9B;
+  padding-left: 30px;
+  margin-top: -15px;
 }
