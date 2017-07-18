@@ -133,3 +133,9 @@ a {
   padding-left: 30px;
   margin-top: -15px;
 }
+
+@media only screen and (max-width: 7680px) {
+    .col {
+        padding-bottom:
+    }
+}
