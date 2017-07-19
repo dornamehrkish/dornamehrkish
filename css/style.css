@@ -31,16 +31,43 @@ nav ul li:first-child {
   margin-right: auto;
 }
 
-.read-more {
+nav ul li a:hover {
+  color: black;
   font-weight: 900;
-  text-decoration:none;;
+
+}
+
+.read-more {
+  border-bottom: 1px solid black;
+}
+footer {
+  margin-top: 150px;
+}
+
+.text-black {
+  margin-top: .5rem;
+}
+.col > ul {
+  display: inline;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+
+}
+
+.fa:hover {
+  cursor: grab;
+  color: navy;
 }
 
 .project-card {
   position: relative;
   vertical-align: top;
   text-align: left;
-  /*width: 80%;*/
   height: 400px;
   margin: 10px 0;
   border-radius: 6px;
@@ -54,12 +81,14 @@ nav ul li:first-child {
 }
 
 .project-card:hover {
-  -webkit-animation: pulse 1.6s;
-    animation: pulse 1.6s;
+  -webkit-animation: pulse 1.2s;
+    animation: pulse 1.2s;
+    cursor: grab;
+  }
 
-}
-
-
+  a:hover{
+   text-decoration: none;
+ }
 
 
 
@@ -113,19 +142,23 @@ a {
 }
 
 .lendmate > .card-top {
-  background-color: #D0F5F3;
+  background: #D0F5F3 url(../assets/lendmate/lm-ios-mock.png) center center no-repeat;
+  background-size: 255px;
 }
 
 .bmd > .card-top {
-  background-color: #F4AC4D;
+  background: #F4AC4D url(../assets/bmd/bmd-mock.png) top no-repeat;
+  background-size: 370px, cover;
 }
 
 .b-box > .card-top {
-  background-color: #D9B0FC;
+  background: #D3FCB0 url(../assets/blocbox/box-mock.png) center top no-repeat;
+  background-size: 359px;
 }
 
 .lyft > .card-top {
-  background-color: #D3FCB0;
+  background: #D9B0FC url(../assets/Lyft/lyft-logo.png) center no-repeat;
+  background-size: 200px;
 }
 
 .card-bottom > p {
@@ -134,9 +167,41 @@ a {
   margin-top: -15px;
 }
 
+
+.card-image {
+  margin: 40px;
+
+}
+
+
+.cta-container {
+  margin-top: 25%;
+}
+
+.button-class {
+  padding: 20px;
+  text-align: center;
+}
+
+.button-class > button {
+  background-color: black;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+
+
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         padding-bottom: 132px;
     }
-    
+
+    .button-class > button {
+      margin: 10px;
+
+
+    }
+
+
+
 }
