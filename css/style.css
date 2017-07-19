@@ -21,7 +21,8 @@ nav ul li {
   list-style-type: none;
 }
 nav ul li a {
-  color: black;
+  font-weight: 100;
+  color: #353839;
   display: block;
   line-height: 3em;
   padding: 1em 3em;
@@ -33,7 +34,7 @@ nav ul li:first-child {
 
 nav ul li a:hover {
   color: black;
-  font-weight: 900;
+  font-weight: bolder;
 
 }
 
@@ -76,13 +77,14 @@ footer {
   box-shadow: 0 10px 10px rgba(0, 0, 0, .07);
   display: block;
   overflow: hidden;
-
+  -webkit-transition: top 1s ease-in;
+  -moz-transition: top 1s ease-in;
+  transition: top .1s ease-in;
 
 }
 
 .project-card:hover {
-  -webkit-animation: pulse 1.2s;
-    animation: pulse 1.2s;
+    top: -10px;
     cursor: grab;
   }
 
@@ -122,7 +124,7 @@ a {
   line-height: 2.5rem;
 }
 
-.welcome {
+.title {
   margin-bottom: 100px;
   font-size: 3em;
 }
@@ -183,7 +185,7 @@ a {
   text-align: center;
 }
 
-.button-class > button {
+.button-class > .btn {
   background-color: black;
   color: white;
   font-family: 'Work Sans', sans-serif;
@@ -191,6 +193,17 @@ a {
 
 }
 
+
+/*About Me*/
+
+.about-photo {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.about-icon {
+  padding: 10px;
+}
 @media only screen and (max-width: 768px) {
     .container {
         padding-bottom: 132px;
