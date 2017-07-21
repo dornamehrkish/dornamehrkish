@@ -9,9 +9,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="assets/dm.svg"/>
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="../assets/dm.svg"/>
+<link rel="stylesheet" href="../css/animate.css">
+<link rel="stylesheet" href="../css/style.css">
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,7 +24,9 @@ ga('send', 'pageview');
 
 </script>
   </head>
-  <body>
+
+
+  <body data-spy="scroll" data-target="#navbar">
 
 
       <!-- Navbar -->
@@ -33,18 +35,242 @@ ga('send', 'pageview');
 <div class="container parent">
   <nav>
     <ul>
-      <li><a href="#" class="logo"><img src="//dornamehrkish.github.io/dornamehrkish/assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
+      <li><a href="../index.html" class="logo"><img src="../assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
       </li>
       <li><a href="http://google.com/">Work</a>
       </li>
-      <li><a href="#">About</a>
+      <li><a href="../about.html">About</a>
       </li>
 
     </ul>
   </nav>
 
 
+  <!-- Header -->
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 data-toc-skip class="title">Blocbox</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <!-- sidebar, which will move to the top on a small screen -->
+    <div class="col-sm-3">
+    <div class="sidebar">
+        <ul class="mainmenu">
+   <li><a href="#problem">Problem</a></li>
+   <li><a href="#research">Research</a></li>
+   <li><a href="#">Process</a>
+     <ul class="submenu">
+       <li><a href="">Research</a></li>
+       <li><a href="#">User Flows</a></li>
+       <li><a href="#">UI</a></li>
+     </ul>
+   </li>
+   <li><a href="#">What I learned</a></li>
+ </ul>
+</div>
+
+    </div>
+    <!-- main content area -->
+    <div class="col-sm-9">
+      <p>Blocbox is a web application that allows users to collect and store content in a single system. Directly within Blocbox, you can save links, store your favorite images and write notes. This would replace the need to for the browser’s bookmarking feature. </p>
+      </br>
+      <p><strong>Role:</strong> UX Design</p>
+      <p><strong>Platform:</strong> Desktop</p>
+
+      <h2 id="problem">Defining the Problem</h2>
+
+      <p>As a consumer today, we see  content everywhere we go. Offline and online, we are met with ads, videos, photography and text to drive our behavior as consumers. Even on mobile, it’s normal to wake up to several push notifications from our favorite apps -- most of which are dismissed. When you end up finding something that you love, saving and sharing that content becomes cumbersome. Bookmarks are forgettable and unmanageable. Storage also becomes an issue, especially on mobile. </p>
+    </br>
+    <p>Blocbox aims to simplify this problem by building a consolidated space for all content types. Moreover, this would be an application where you can collaborate with friends or colleagues. As we design Blocbox, we must communicate different pricing tiers and remember that the design should drive new sign-ups.</p>
+      </br>
+      <h2 id="research">Project Research</h2>
+      <p>Before diving into any design tools, it was important to gather feedback from targeted Blocbox Users. As a designer, I wanted to learn about their current habits when browsing content online. What apps are they using? Where and when are they browsing? Do they use any other tools, such as Evernote, or Google Docs? Learning a bit more about their pain points would help prioritize the roadmap for Blocbox. You can take a look at the survey questions <a href="https://docs.google.com/forms/d/1e8ZvswK4W2CbGtXbgGNp6gyrCEhpoNxsPbcjmPdTZo0/edit" class="external-link">here.</a> </p>
+
+      <h4 id="results">Results</h4>
+      <p>I sent out the survey to 10 people and received an 80% response rate. Most respondents stated that they browse equally on desktop and mobile, and that they currently have trouble remembering where they save things. Bookmarking happens on the browser for some users, but most people use alternative apps, like Pinterest or Instagram. It seemed like with these apps, the type of content was very specific (for example, one user saves wedding related content only on Pinterest). There is still a need for a more accessible tool.</p>
+      <p>I’ve highlighted a few answers below that focus on saving behaviors. </p>
+    </br></br>
+    <img src="../assets/blocbox/survey-results.png" class="img-fluid">
+
+    <h4 id="persona">Humanizing the Blocbox User</h4>
+    <p>To keep the design process focused on the user, I began exploring personas. In my Voice of Customer role at Lyft, I had the experience of creating customer journey maps to help our product and engineering teams  empathize with some common reports we were seeing on the Support team. Some of the best practices I learned from that process was to create open-ended questions that leave out bias. With that in mind, I selected three potential users for more in-depth interviews. Having a natural conversation about their day-to-day tasks and activities helped contextualize the need for Blocbox.</p>
+  </br>
+  <p>The first interview I found it challenging to simultaneously take notes and ask questions. For rounds two and three, I recorded them and kept my focus on the user. Later, I then listened to their answers and compiled notes. The common thread for all three users was that storage was an issue for them. Collaboration was not as important as I thought it would be, but it was still important for the users to quickly share (maybe within WhatsApp or imessage or email clients). </p>
+  <p> Below are the personas created:</p>
+</br>
+
+  <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="../assets/blocbox/kaitlyn.png" target="_blank">
+            <img src="../assets/blocbox/kaitlyn.png" alt="Kaitlyn-Persona" style="width:100%">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="../assets/blocbox/kaitlyn.png" target="_blank">
+            <img src="../assets/blocbox/aaron.png" alt="Aaron-Persona" style="width:100%">
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="../assets/blocbox/kaitlyn.png" target="_blank">
+            <img src="../assets/blocbox/anna.png" alt="Anna-Persona" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </br>
+
+
+      <h2 id="flow">User Flows</h2>
+      <p>After finalizing my personas, I mapped out user flows to ensure that the design is helping users go closer to their goals. I had a pretty clear understanding of what the business objectives were at this point (sign-up new users, convert to paying users ..etc), and it was time to outline this more clearly. </p>
+      <p>First, I listed out all potential user stories for both new users and returning users--- setting a priority to each. Doing this after my survey helped tremendously-- I realized that features like social sharing and importing content should not be initially prioritized. </p>
+
+      <p>I created the below user flows in order to simplify the experience for Blocbox users. I took into consideration not just the survey results and requirements, but also the <a href="https://docs.google.com/document/d/1588le8juY1mNfLMG9ou_k_1TOvuglGnvJ_VVBO9ZPaA/edit" class="external-link">competitive analysis</a> I did earlier in the project. </p>
+</br></br>
+      <div class="row">
+          <div class="col-sm-12">
+            <div class="thumbnail">
+              <a href="../assets/blocbox/blocbox-flow.png" target="_blank">
+                <img src="../assets/blocbox/blocbox-flow.png" alt="user flow" style="width:100%">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p>One thing I noticed in Blocbox competitor’s is that too much information was asked too soon (example, credit card details).  User flows helped me keep onboarding simple (but still sleek) for new Blocbox users. It was also important that returning users had intuitive ways to add new content and share it.  I would be testing these flows later on. </p>
+
+
+      <h2 id="branding">Branding</h2>
+
+      <p>I kicked off the logo design by creating a <a href="https://drive.google.com/file/d/0B_A8cwQ3iUDudWZKZTdKaW9PSms/view" class="external-link">mental map</a> of the word “Blocbox”. Jotting down related words helped me think of themes that could potentially inform the logo. </p>
+      <p>From there, I began to sketch out potential logos  using a pen and paper. This was the most foreign process to me, but I really tried to let my ideas flow. I aimed to create a scalable logo that was bold, but friendly. </p>
+      <p>I wanted to give a feel of continuity with a capital ‘B’. Playing around with the letter also made me think of a heart shape. I tried combining these for the final logo.</p>
+      <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <a href="../assets/blocbox/logo-sketch.png" target="_blank">
+                <img src="../assets/blocbox/logo-sketch.png" alt="brainstorm" style="width:100%">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <a href="../assets/blocbox/logo-options.png" target="_blank">
+                <img src="../assets/blocbox/logo-options.png" alt="logo options" style="width:100%">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      <h4 id="palette">Adding Color</h4>
+
+      <p>Blocbox has a clear mission of becoming a modern, approachable tool for storing and sharing content. To support this, I composed two different palettes:</p>
+      <ol>
+        <li>Complimentary </br> <p>I chose teal and orange as my complimentary colors. These two together felt very legible. I also played around with gradients for this palette and felt it would look great with Blocbox. With Blocbox, I want the focus to be on the product (creating and sharing content), so I chose tones that were not too bright or distracting. For this reason, I did not end up using the bright mint color. At the time, I was also inspired by makeup artists that I’ve been paying attention to-- the peachy tones were inspiring to me.</p></li>
+        <li>Monochromatic </br> <p>I chose a green monochromatic scheme with a small pop of orange. The orange is there for CTAs and areas of high emphasis. Green was chosen because it its not "too" professional-- everyday casual users of Blocbox will feel welcome to use it. The color has a harmonious feel.
+</p></li>
+      </ol>
+</br></br>
+      <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <a href="../assets/blocbox/pallete-a.png" target="_blank">
+                <img src="../assets/blocbox/pallete-a.png" alt="color option" style="width:100%">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <a href="../assets/blocbox/pallete-b.png" target="_blank">
+                <img src="../assets/blocbox/pallete-b.png" alt="color options" style="width:100%">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      <h2 id="final">Finalizing the Design</h2>
+
+      <p>I used Balsamiq to mock-up some very rough versions of the home page and the dashboard. I made two versions of each screen to allow for wider usability testing.</p>
+      <p>Version one was longer and included every major element on the home page (testimonials and pricing). Version two was shortened. I wanted to keep the homa page focused solely on what Blocbox is to improve the signup rate. Pricing and testimonials were moved to separate pages. </p>
+      <p>I moved forward with version two, creating a high-fidelity wireframe (using Illustrator). You can play with that prototype here. </p>
+      <p> Before making this pixel-perfect, I wanted more feedback from Blocbox users. Using the prototype above, I created a list of tasks and sat down and observed users as they tried to complete them using the prototype. The two biggest takeaways were that I needed to make Blocbox mobile-responsive, and that it was not entirely clear what Blocbox did. I needed to clean up the copy. If you want to look at the full list of questions and answers, you can do that here. </p>
+
+      <h4 id="high-fi">Working With Sketch</h4>
+
+      <p>With the initial feedback in mind, I started to complete the final UI in Sketch. The design itself did not change much, but I felt it came to life with the addition of color and typography. The hardest part making the colors work together harmoniously. I ended up omitting one of my original color choices. </p>
+      <h4 id="testing">Usability Testing:Highlights</h4>
+      <p>I used usertesting.com to recruit three random users for some final testing. They were asked to sign up for an account, and to add new content. As a follow-up, I asked the following questions:</p>
+      <ol>
+        <li>What frustrated you most about this site?</li>
+        <li>If you had a magic wand, how would you improve this site?</li>
+        <li>What did you like about the site?</li>
+        <li>How likely are you to recommend this site to a friend or colleague (0=Not at all likely, and 10=Very Likely)?</li>
+      </ol>
+
+      <p>From the questions above, I got a great mix of responses. All three users enjoyed the design and felt it was professional. I noticed that one of them had trouble finding the pricing page (which is now at the footer), so in future versions I would bring that back to the top nav. There was also a few dead-ends in my prototype, so I’ll need to make sure to test each screen more thoroughly.</p>
+      <p>I also did a five second test on UsabilityHub to get an initial impression of the homepage. Twenty-five users were asked what they think Blocbox is about; I’ve summarized responses:</p>
+      <div class="row">
+          <div class="col-sm-12">
+            <div class="thumbnail">
+              <a href="../assets/blocbox/word.png" target="_blank">
+                <img src="../assets/blocbox/word.png" alt="word cloud" style="width:75%">
+              </a>
+            </div>
+          </div>
+        </div>
+<p>Collaboration and inspiration were the two most popular responses, which is a step in the right direction. Still, there was room for improvement. </p>
+<p>I felt that a big component missing in the Dashboard was a search bar. Until now, the designs have been focused on small-scale use of Blocbox. What if a user uploads thousands of images at once? Isolating content is necessary. </p>
+<p>I decided to test this, as well as a new location for the “add” button” A preference test is used to compare two options  A, and B (shown below) By far, the second version, with the add button wider and closer to the left panel was the preferred choice. This is also the version that includes a way to search across all Blocbox content. Considering most readers scan pages from left to right in an “F” shape, this location seems more intuitive. </p>
+<div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/blocbox/dash-a.png" target="_blank">
+          <img src="../assets/blocbox/dash-a.png" alt="add button" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/blocbox/dash-b.png" target="_blank">
+          <img src="../assets/blocbox/dash-b.png" alt="alt location" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p>Finally, I dove into the front-end portion of this course which allowed me to build Blocbox using HTML, CSS and Javascript. For the sake of simplicity as I learn, I’ve used the layout and color palettes provided by Blocbox. I deployed this <a href="https://dornamehrkish.github.io/Blocbox/" class="external-link">on Github.</a> </p>
+
+
+
+      <h2 id="learn">What I Learned</h2>
+<p>Thinking back to the design process itself, there were two things that stuck out as most challenging: javascript and logo design. Javascript was hard to learn because it was the first concept that was completely foreign to me, and with that, came additional plugins and frameworks that I did not think I was ready yet to learn (without learning the basics). After reviewing the syntax in Bloc and spending hours on various blogs/websites, I got the impression that this is a dynamic, evolving programming language. Designing my own Blocbox logo also proved to be extremely difficult at first. I’ve never seen myself as an artist type, so it was hard to go through the process of sketching and wireframing an identity for a brand. I still don’t love the logo I came up with, but it came a long way. I enjoyed reading about different logo designers and their process. </p>
+
+<p>The most rewarding process was adding the high-fidelity mockups into a prototype and having real people test it out. It’s important during usability testing that your users interacting with your design on their own device.  I think that was interesting to see. I learned that your target audience and test group should mirror each other and be as specific as possible to deliver helpful results. </p>
+
+
+    </div>
+  </div>
+</div>
+
+
+      </div>
 
 
   <!-- Footer -->
@@ -88,9 +314,10 @@ ga('send', 'pageview');
 </div>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+
 </body>
 </html>

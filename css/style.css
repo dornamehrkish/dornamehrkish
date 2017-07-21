@@ -1,3 +1,5 @@
+/*Navbar*/
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -38,9 +40,24 @@ nav ul li a:hover {
 
 }
 
+h1 {
+  text-align: center;
+  font-weight: 200;
+}
+
+
+a {
+  color: black;
+}
+
+a:hover{
+ text-decoration: none;
+}
 .read-more {
   border-bottom: 1px solid black;
 }
+
+/*footer*/
 footer {
   margin-top: 150px;
 }
@@ -62,8 +79,20 @@ footer {
 
 .fa:hover {
   cursor: grab;
-  color: navy;
+  color: #353839;
 }
+
+/*grid fine-tuning*/
+
+.container {
+  max-width: 95%;
+}
+.offset-sm-6 {
+  margin-left: 0px;
+}
+
+/*Project Preview*/
+
 
 .project-card {
   position: relative;
@@ -77,9 +106,10 @@ footer {
   box-shadow: 0 10px 10px rgba(0, 0, 0, .07);
   display: block;
   overflow: hidden;
-  -webkit-transition: top 1s ease-in;
-  -moz-transition: top 1s ease-in;
+  -webkit-transition: top .1s ease-in;
+  -moz-transition: top .1s ease-in;
   transition: top .1s ease-in;
+  top: 0;
 
 }
 
@@ -88,9 +118,7 @@ footer {
     cursor: grab;
   }
 
-  a:hover{
-   text-decoration: none;
- }
+
 
 
 
@@ -109,15 +137,6 @@ footer {
 }
 
 
-h1 {
-  text-align: center;
-  font-weight: 200;
-}
-
-
-a {
-  color: black;
-}
 
 .intro {
   text-align: right;
@@ -129,19 +148,12 @@ a {
   font-size: 3em;
 }
 
-.offset-sm-6 {
-  margin-left: 0px;
-}
-
-
 .b-box, .lyft, .bmd {
   margin-top: -120px;
 }
 
 
-.container {
-  max-width: 95%;
-}
+
 
 .lendmate > .card-top {
   background: #D0F5F3 url(../assets/lendmate/lm-ios-mock.png) center center no-repeat;
@@ -175,7 +187,7 @@ a {
 
 }
 
-
+/*home CTA*/
 .cta-container {
   margin-top: 25%;
 }
@@ -189,8 +201,10 @@ a {
   background-color: black;
   color: white;
   font-family: 'Work Sans', sans-serif;
+}
 
-
+.button-class > .btn:hover {
+  background-color: #353839;
 }
 
 
@@ -202,8 +216,140 @@ a {
 }
 
 .about-icon {
-  padding: 10px;
+  vertical-align: top;
+  display: inline-block;
+
 }
+
+.icon-row {
+text-align: justify;
+
+}
+
+.icon-row::after {
+  content: "";
+	width: 100%;
+	display: inline-block;
+}
+.icon-group {
+  vertical-align: baseline;
+  display: inline-block;
+  text-align: center;
+}
+
+.caption {
+  display: block;
+  width: 95%;
+  margin-top: 30px;
+}
+.specialty {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.form-text {
+  line-height: 50pt;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+/*contact form*/
+.form-container {
+  margin-top: 120px;
+}
+
+.resume-under {
+  border-bottom: solid 3px #FCB3B0;
+}
+.resume-under:hover {
+    color: #353839
+  }
+
+input[type="text"],
+input[type="email"]{
+  padding: 10px;
+  border: solid .1px black;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: 'Work Sans', sans-serif;
+
+
+}
+
+
+input[type="submit"] {
+    border: none;
+    color: white;
+    padding: .75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    background-color: black;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    margin-left: 33%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.comment-box {
+height: 24vh;
+}
+
+
+
+
+/*Case Study Page*/
+
+.external-link {
+  border-bottom: solid 3px #FCB3B0;
+}
+
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.mainmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+  margin-left: 30px;
+}
+
+
+
+.submenu a:hover {
+
+  text-decoration: underline;
+}
+
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         padding-bottom: 132px;
@@ -211,10 +357,10 @@ a {
 
     .button-class > button {
       margin: 10px;
-
-
     }
-
+    nav.affix[data-toggle='toc'] {
+       position: static;
+     }
 
 
 }
