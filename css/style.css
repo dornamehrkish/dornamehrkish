@@ -351,9 +351,9 @@ height: 24vh;
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
+    /*.container {
         padding-bottom: 132px;
-    }
+    }*/
 
     .button-class > button {
       margin: 10px;
@@ -362,5 +362,18 @@ height: 24vh;
        position: static;
      }
 
+     nav ul li a {
+       margin-left: -4vh;
+
+     }
+
+     .icon-group {
+       display: block;
+       margin-top: 15px;
+     }
+
+     .project-card {
+       margin-bottom: 23vh;
+     }
 
 }
