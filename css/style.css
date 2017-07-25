@@ -292,10 +292,13 @@ input[type="submit"] {
     margin-left: 33%;
     font-family: 'Work Sans', sans-serif;
 }
-
+input[type="text"]::placeholder {
+    white-space: normal;
+    text-align: center;
+}
 
 .comment-box {
-height: 24vh;
+height: 32vh;
 }
 
 
@@ -350,6 +353,11 @@ height: 24vh;
   -webkit-transition: all 0.5s ease-out;
 }
 
+
+.landing {
+  margin-top: 12px;
+}
+
 @media only screen and (max-width: 768px) {
     /*.container {
         padding-bottom: 132px;
@@ -374,6 +382,10 @@ height: 24vh;
 
      .project-card {
        margin-bottom: 23vh;
+     }
+
+     .card-bottom > p {
+       font-size: 2vh;
      }
 
 }
