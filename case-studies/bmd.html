@@ -35,7 +35,7 @@ ga('send', 'pageview');
     <ul>
       <li><a href="#" class="logo"><img src="//dornamehrkish.github.io/dornamehrkish/assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
       </li>
-      <li><a href="http://google.com/">Work</a>
+      <li><a href="landing.html">Work</a>
       </li>
       <li><a href="#">About</a>
       </li>
@@ -43,6 +43,333 @@ ga('send', 'pageview');
     </ul>
   </nav>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 data-toc-skip class="title">Bake My Day</h1>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="container">
+  <div class="row">
+    <!-- sidebar, which will move to the top on a small screen -->
+    <div class="col-sm-3">
+    <div class="sidebar">
+        <ul class="mainmenu">
+   <li><a href="#problem">Problem</a></li>
+   <li><a href="#research">Research</a></li>
+   <li><a href="#">Process</a>
+     <ul class="submenu">
+       <li><a href="">Research</a></li>
+       <li><a href="#">User Flows</a></li>
+       <li><a href="#">UI</a></li>
+     </ul>
+   </li>
+   <li><a href="#">What I learned</a></li>
+  </ul>
+  </div>
+
+    </div>
+    <!-- main content area -->
+    <div class="col-sm-9">
+      
+
+      <p>Bake My Day is a service that allows you to order desserts (and other baked goods), direct to your home or office.
+      </br>
+      <p><strong>Role:</strong> UX Design</p>
+      <p><strong>Platform:</strong> Desktop</p>
+
+      <h2 id="problem">Defining the Problem</h2>
+
+        <p>Much of my time is spent in the kitchen tweaking different recipes. Lately, I’ve had a bit of an obsession with baking bread. This personal interest sparked an idea to build out an optimized web experience for a local bakery. As a UX Designer, my goals in this project were:
+</p>
+<ul>
+  <li>Understand and identify current usability issues ordering food online</li>
+  <li>Build and validate a potential design solution through research and testing</li>
+  <li>Ensure my solution is fully responsive on both web and mobile</li>
+</ul>
+      </br>
+      <h2 id="research">Project Research</h2>
+      <p>A sizeable majority of Americans have shifted towards online shopping. Forrester predicts that by 2017, the market will be worth roughly $370 billion. Specifically, mobile first design has impacted food delivery.  Newcomers DoorDash and Postmates are showing explosive growth in recent years, likely due to being a three-sided marketplace with faster delivery service. The value proposition appears to be offering more goods (or food options)  than competitors and brick-and-mortar stores for online purchase and delivery within an hour, via couriers. </p>
+
+      <div class="row">
+          <div class="col-md-12">
+            <div class="thumbnail">
+              <a href="../assets/bmd/postmates_graph.png" target="_blank">
+                <img src="../assets/bmd/postmates_graph.png" alt="on-demand trends" style="width:100%">
+              </a>
+            </div>
+          </div>
+        </div>
+<p>Consumers also tended to spend more on these platforms:</p>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="thumbnail">
+                <a href="../assets/bmd/postmates_graph.png" target="_blank">
+                  <img src="../assets/bmd/postmates_dd_graph.png" alt="on-demand trends" style="width:100%">
+                </a>
+              </div>
+            </div>
+          </div>
+</br>
+      <p>I was focused on baked goods, so I decided to run a competitor analysis looking at the following things:</p>
+      <ul>
+        <li>Company history </li>
+        <li>Cost of items</li>
+        <li>Referral programs</li>
+        <li>Checkout experiences</li>
+        <li>Sign up flow (How much profile info is required before purchasing?)</li>
+      </ul>
+
+      <p>
+The full analysis can be viewed <a href="https://docs.google.com/spreadsheets/d/1mjKSfrl1u50Qcm37NsaumwQGuY8xfv1cehCQF4kD9f4/edit" class="external-link">here.</a> As you can see, the scale of the companies I chose vary greatly (on purpose). Specialties and Magnolia are regional bakeries while Doughbies claims to deliver “fresh cookies” to anywhere in the United States. </p>
+      <p>For the sake of research, and for my tummy, I tested Doughbie’s user flow out in real life.  </p>
+      <p> What stood out:</p>
+
+      <ul>
+        <li>As a first time user, it was great getting coupon codes for my first order</li>
+        <li>The branding -- felt bright but comforting</li>
+        <li>Referral portal for tracking your invitation code</li>
+        <li>Very engaging promotional emails</li>
+      </ul>
+
+      <p>Pain points:</p>
+
+      <ul>
+        <li>Lack of review system for the actual products</li>
+        <li>Nutritional info was unhelpful (it said to email them, but didnt offer an address)</li>
+        <li>A few confusing graphics that did not align with the copy on the website</li>
+      </ul>
+<p>I took note of this and shifted focus to the checkout experience (on web). Because 25% of shoppers abandon their purchase because of forced registration, most companies tend to allow guest checkout. Companies like Amazon can get away with forced registration due to high brand recognition/value, but about 8 in 10 are now making this an option. Because one of my user stories involved referrals, I wouldn’t encourage this completely in my solution. The benefit of creating an account would be earning store credit. </p>
+
+
+<p>Cart visibility was also a key component of a successful checkout. At any given point, a user should be able to scan a page to view his/her current shopping cart. Upselling should also be a secondary goal of the process. </p>
+<div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/bmd/asos_screen.png" target="_blank">
+          <img src="../assets/bmd/asos_screen.png" alt="add button" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+    </br></br></br></br>
+      <p>Asos has a simple animation for adding something to a cart. The subtotal appears for a few seconds, then disappears back in. In this time, the checkout button is highlighted to optimize sales. The user remains on the same product page.</p>
+
+    </div>
+  </div>
+
+</br>
+</br>
+
+<p>Amazon focuses on upsells. The recommended products are much larger than the current item in focus. There is still a clear drive to proceed to purchase, but it takes up less of the page.</p>
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <a href="../assets/bmd/amazon.png" target="_blank">
+          <img src="../assets/bmd/amazon.png" alt="on-demand trends" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</br>
+<p>It feels slightly overwhelming, but I understand the need.  As a former Customer Success Manager, I've learned that driving upsells or cross sells can be a challenge, but if done tactfully, customers are more likely to come back. Product upsells became a late addition to this project’s requirements. I took them out of the checkout screen and instead they were stuck on the browsing screen. </p>
+
+    <h4 id="survey">User Survey</h4>
+    <p>I needed more user insights to validate some of my ideas. Using Google Forms, I created a user survey that asked how users are currently consuming desserts. Pricing was also a research area. </p>
+  </br>
+  <div class="row">
+      <div class="col-md-12">
+        <div class="thumbnail">
+          <a href="../assets/bmd/dessert_results.png" target="_blank">
+            <img src="../assets/bmd/dessert_results.png" alt="on-demand trends" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+<p>About half of the users had experience with services like DoorDash, or Grubhub. They preferred digital ordering methods over calling the restaurant. </p>
+</br>
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <a href="../assets/bmd/dessert_results_two.png" target="_blank">
+          <img src="../assets/bmd/dessert_results_two.png" alt="on-demand trends" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</br>
+
+<p>Everyone was willing to pay up to 10% more for instant service. </p>
+
+<p>From this, I conducted one user interview to continue with follow-up questions. I spoke to someone who worked as a secretary. She acts as the logistics and admin person in the office too, ordering office snacks and birthday treats. She typically orders large orders for her entire office using catering companies, and Postmates. Her gripe is the price added on for on-demand services. I asked her to show me how she would order something with Postmates, and she instantly made a complaint about how “slow” the website loaded on her phone. I tried it myself, and also noticed a difference.</p>
+
+<p>Here, I also saw her struggling with the order itself. She started to add items to her cart, and then realized the restaurant was closed. This was frustrating, and could have been prevented through more transparency. </p>
+<p>Through my user research, I was able to put together two personas for this website:</p>
+</br>
+<div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/bmd/catherine.png" target="_blank">
+          <img src="../assets/bmd/catherine.png" alt="catherine persona" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/bmd/zack.png" target="_blank">
+          <img src="../assets/bmd/zack.png" alt="zack persona" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</br>
+<h2 id="flow"> User Flows</h2>
+
+<p>I listed out requirements for the website using user stories. The full list <a href="https://docs.google.com/spreadsheets/d/1FA_LUiGFD5NpLC3qLL9cW2Cq6KlW4stkqNUeS5dnFZQ/edit?usp=sharing" class="external-link">can be viewed here</a>, with the priority added. This helped me weed out unnecessary features for the MVP. Bake My Day now has 5 core requirements for both new and returning users:</p>
+
+<ul>
+  <li>Browsing baked goods based on location of user (menu would be dynamic based on time and location)</li>
+  <li>Filtering by category and nutrition</li>
+  <li>Ability to rate and review an item</li>
+  <li>Ability to manage referrals</li>
+  <li>Ability to purchase using credit card and PayPal</li>
+</ul>
+  </br>
+
+  <p>Using these, I created user flows that would aide in the design. This proved to be tricky, because of the delivery component. This is currently a limited service in the Bay Area, so I needed to manage expectations for delivery. If the bakery does not delivery, this needs to be communicated.</p>
+  <div class="row">
+      <div class="col-md-12">
+        <div class="thumbnail">
+          <a href="../assets/bmd/bmd_flow.png" target="_blank">
+            <img src="../assets/bmd/bmd_flow.png" alt="on-demand trends" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </br></br>
+  <h2 id="brand">Branding</h2>
+<p>I experimented with tons of line work for the logo, creating versions that included either symbols of baking (wooden cutting board, flour, loaf of bread )  or of transportation (van). You’ll see a bright orange used in the logo to trigger appetite and remain cheerful. </p>
+</br>
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <a href="../assets/bmd/logo_options.png" target="_blank">
+          <img src="../assets/bmd/logo_options.png" alt="on-demand trends" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+<p>After some helpful feedback from my mentor, I narrowed  down the options to two.</p>
+
+<p>With Usability Hub, I was able to create a preference test for users to choose between logos. Here are the results:</p>
+</br>
+<div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/bmd/logo_a.png" target="_blank">
+          <img src="../assets/bmd/logo_a.png" alt="logo a" style="width:80%">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+    </br></br>
+    <p>Logo A</p>
+    <ul>
+      <li>57% of the vote</li>
+      <li> Feedback: "It's clearer, it doesnt pop up as much over the other one on a gray background, but it looks like one whole logo, rather than split"</li>
+    </ul>
+    </div>
+  </div>
+</br></br>
+  <div class="row">
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="../assets/bmd/logo_b.png" target="_blank">
+            <img src="../assets/bmd/logo_b.png" alt="logo b" style="width:80%">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+      </br></br>
+      <p>Logo B</p>
+      <ul>
+        <li>43% of the vote</li>
+        <li> Feedback: "I like the circle, it makes the logo stand out and it reminds me of a cookie"</li>
+      </ul>
+      </div>
+    </div>
+
+
+<p> The orange remained as an accent color for the brand, with the rest of the pallette being more neutral (soft green and brown tones). </p>
+<p>I chose Avenir as the primary type for headlines and body of text due to its versatility and modern look. The one exception to this is the use of Novito Nova type in the logo. I wanted a handwriting type to connect the user back to a real-life bakery (and to the process of baking). </p>
+
+
+
+  </br>
+
+
+      <h2 id="final">Finalizing the design: test and repeat</h2>
+      <p>Several iterations were created before finalizing designs for Bake My Day. The UI Design process first started with pen/paper, then went to low fidelity wireframing with Balsamiq. Balsamiq is great because of its component library. I was able to create 10 wireframes within hours and receive my first round of feedback within two days. </p>
+    </br></br>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2500">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="../assets/bmd/wireframe_a.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="../assets/bmd/wireframe_b.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="../assets/bmd/wireframe_c.png" alt="Third slide">
+            </div>
+          </div>
+        </div>
+      </br></br>
+      <p>One problem I began to have was around structuring my user flows. I had a good sense of how to categorize the items on my website ( cookies, cakes, breads… etc), but I wasn’t sure where to place the filters for delivery time, nutrition, and location. To help me get unstuck, I ran a tree test to help me evaluate some of my potential solutions. Unlike a traditional usability test, a tree test is conducted with simple nested text. The user goes through pre-written tasks and the results are presented as a path. This assesses the findability of certain items on the website.</p>
+      <p>The results were powerful. I realized that my original solution made no sense for two reasons: </p>
+      <ol>
+        <li>If users had a question about dietary restriction, they were naturally inclined to go to the “Help section” first, before the menu</li>
+        <li>The zipcode check should be placed ahead of the menu to set better user expectations. Users should not be able to order until it's confirmed that we deliver in their neighborhood. </li>
+      </ol>
+
+      <p> I then went back to Balsamiq and re-did a few screens based on the results from this test. I also optimized the UX for mobile, allowing me to focus solely on getting the user to checkout. </p>
+      <p>I now felt ready to jump into Sketch. </p>
+
+      <p>The final prototype can be viewed in <a href="https://marvelapp.com/2gbg8e3/screen/27682736" class="external-link">Marvel App.</a> With the working prototype, I conducted quick usability tests through Google Forms, asking specifically about the copy used, and the trust associated with the brand. I was also interested in areas of friction prior to purchasing an item. </p>
+
+      <h2 id="learn">What I Learned</h2>
+
+  <p>The recurring lesson to me as a Designer is adhering to  responsive grid systems in my Sketch/Illustrator files. I started this project with a larger artboard than intended, leading to zoomed in components and clunky interactions.</p>
+  <p>This project also taught me that visual hierarchy and copywriting in UI is as important in the wireframing stage as it is later on closer to launch. Design assets can be passed around between teams, and should be able to speak for themselves. Instead of relying on placeholder content, I worked hard on this project to create realistic data early on. </p>
+
+  <p>Moving forward, Bake My Day could focus on two major areas to grow:</p>
+  <ol>
+    <li>Credibility:Testimonials from target users as well as a more built out referral portal</li>
+    <li>Supplmental revenue models: catering subscription for offices </li>
+  </ol>
+
+
+
+    </div>
+  </div>
+  </div>
+
+
+      </div>
 
 
 
