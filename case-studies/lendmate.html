@@ -43,7 +43,221 @@ ga('send', 'pageview');
     </ul>
   </nav>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Lendmate</h1>
+    </div>
+  </div>
+  </div>
 
+  <div class="container">
+  <div class="row">
+    <!-- sidebar, which will move to the top on a small screen -->
+    <div class="col-sm-3">
+    <div class="sidebar">
+        <ul class="mainmenu">
+   <li><a href="#problem">Problem</a></li>
+   <li><a href="#research">Research</a></li>
+   <li><a href="#">Process</a>
+     <ul class="submenu">
+       <li><a href="">Research</a></li>
+       <li><a href="#">User Flows</a></li>
+       <li><a href="#">UI</a></li>
+     </ul>
+   </li>
+   <li><a href="#">What I learned</a></li>
+  </ul>
+  </div>
+
+    </div>
+    <!-- main content area -->
+    <div class="col-sm-9">
+
+    <p>Lendmate is a fictional iOS app that enables you to rent the things you need from people in your neighborhood. Users can quickly upload photos of rarely used items around their house (or in their garage) and set a daily rental price. Reservations and payments are all completed inside the app. </p>
+
+  </br>
+  <p><strong>Role:</strong> UX Design</p>
+  <p><strong>Platform:</strong> Desktop</p>
+
+
+<p>Every few years, when I decide to go camping with my friends, I find it hard to justify the costs of a new tent, and new equipment. I end up asking around my networks if I can borrow the items. Aside from outdoor goods, I ran into this problem recently when I needed a moving dolly (but again, did not feel like it was worth the purchase for something I would use one time). A platform like Lendmate was needed so I can quickly locate these items from people who already own them. </p>
+
+  <h2 id="tools">Tools</h2>
+<p>As a UX Designer, my involvement in this project included all stages of the design process: content strategy, information architecture, user research, UI design and most importantly, usability testing. I used the following tools to create a mobile app for iOS:</p>
+<ul class="case-list">
+<li>Sketch App</li>
+<li>Illustrator</li>
+<li>Balsamiq</li>
+<li>Draw.io</li>
+<li>Usability Hub</li>
+<li>Marvel</li>
+</ul>
+
+  <h2 id="research">Research and Problem Definition</h2>
+<p> Early on in the research phase, I intended for Lendmate to be a borrowing app (rather than renting for cash). At its core, sharing unused items for free is one criteria of collaborative consumption. In a world of abundance, this model promotes people to interact with one another, feeling good that they helped a neighbor. The only problem with this is monetization. If borrowing items on this platform is free, how can we drive users to sign up and post their items? How can this compete with classifieds apps (Craigslist, Mercari, Letgo)?</p>
+
+<p>Highlights:</p>
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/lendmate_survey_results.png" target="_blank">
+          <img src="../assets/lendmate/lendmate_survey_results.png" alt="on-demand trends" style="width:80%">
+        </a>
+      </div>
+    </div>
+  </div>
+  <p>Results showed that the majority of users rarely purchase expensive assets, and when they do get purchased, they aren’t used daily. Use tended to be seasonal.  Unsurprisingly (not shown in the graph above), users were split when asked if they would trust a stranger with something valuable. This then led to the next few question-- what kinds of items should be posted on this platform, and how can I use crisp, in-app messaging to maintain user confidence?
+</p>
+
+
+<p>To help answer these questions, I selected two respondents from the initial survey to interview. This revealed that users felt like they had too many belongings. One user mentioned that she makes an effort to donate excess stuff such as clothing or outdated electronics between 2 -3 times per year. Both users assumed that items they would offload were no longer valuable. </p>
+
+<p>Both users also mentioned that if they ever needed something quite expensive (in my interview I mentioned a lawnmower), they would first go to a friend or family member. If they knew their neighbors, they wouldn’t mind asking them too, but both had never tried. Both users were very open to sharing items if someone needed it. Getting paid was preferred as a way to secure the condition.</p>
+</br>
+<p>Using this data, I put together two personas:</p>
+</br>
+
+<div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/Chelsea.png" target="_blank">
+          <img src="../assets/lendmate/Chelsea.png" alt="Chelsea persona" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/Mark.png" target="_blank">
+          <img src="../assets/lendmate/Mark.png" alt="Mark persona" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+</br></br>
+
+  <h2 id="comp">Competitive Analysis</h2>
+  <p>I also analyzed a few potential competitors. I created three large categories for comparison: business profile, borrower experience and lender experience. Using the results I received from my initial user survey, I then listed out a few necessary features under each category and compared the experience for each. Full analysis is <a href="https://docs.google.com/spreadsheets/d/1zddbfi9n9VCVO_7xNO66AQpqwTlF18CXULvVjz9XuC0/edit#gid=0" class="external-link">done here.</a> </p>
+  <div class="row">
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="../assets/lendmate/craigslist.png" target="_blank">
+            <img src="../assets/lendmate/craigslist.png" alt="CL Logo" style="width:100%">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="../assets/lendmate/mercari.png" target="_blank">
+            <img src="../assets/lendmate/mercari.png" alt="Letgo App" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+  </br></br>
+  <p>I realized out of the three companies I chose, none were mobile first. Only one had an iOS app, but it had an extremely low user base in the United States, making it hard to look at real data. The opportunity for Lendmate is there. </p>
+<h2 id="flow"> User Flow</h2>
+<p>At this point, I documented my feature requirements into stories, making the decision to continue as a renting app.</p>
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/table.png" target="_blank">
+          <img src="../assets/lendmate/table.png" alt="user stories" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+  <p>To keep the flow simple  for this first version, I removed a few user stories for later versions (ability to request an item to be fulfilled, and the ability to block users).  To outline the user flow of the onboarding and signup process, I referenced the UI for Mercari, a classifieds app that allows users to sell used clothing. Mercari allows you to browse items first before creating an account, which would later be important for this app to prevent any early dropoff. </p>
+  <div class="row">
+      <div class="col-md-12">
+        <div class="thumbnail">
+          <a href="../assets/lendmate/lm_flow.png" target="_blank">
+            <img src="../assets/lendmate/lm_flow.png" alt="User Flow" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+  </br>
+<p>My user flow ended looking like a mess, so I organized it through a site map. This helped me think through the layers of the app, organizing my primary and secondary navigation bars. An anchored tab bar seemed best to jump between sections of the app. </p>
+</br>
+  <div class="row">
+      <div class="col-md-12">
+        <div class="thumbnail">
+          <a href="../assets/lendmate/lm_site_map.png" target="_blank">
+            <img src="../assets/lendmate/lm_site_map.png" alt="Site Map" style="width:100%">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="brand">Branding</h2>
+    <p>As I finalized my user flow I began putting together a visual design system for Lendmate. I felt very strongly that this was an app that would help you “discover” and “unlock” items in your neighborhood. A key felt like the best symbol to incorporate in the logo. </p>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="thumbnail">
+            <a href="../assets/lendmate/styleguide.png" target="_blank">
+              <img src="../assets/lendmate/styleguide.png" alt="styleguide" style="width:100%">
+            </a>
+          </div>
+        </div>
+      </div>
+    <p>Keeping with the warm, neighborhood theme, I searched for a font that reminded me of my own hometown of San Jose. San Jose is your typical sunny suburb.  I spent most weekends from April through September at the beach nearby, and wanted to somehow bring that into the logo. Pacifico is a bold, bush script that still looks very modern. Using this once in the logo and app icon will make it memorable.</p>
+    <p>Bariol is used as the primary type for the app. It’s a slightly condensed serif that is still modern for a mobile app. The rounded type complements the logo. </p>
+    <p> The selected colors are bright and complimentary to create a playful effect that is still elegant. This pallette proved to be flexible-- allowing me to build payment forms as well as simple illustrations. </p>
+<h2 id="wireframe" class="text-center">Wireframes</h2>
+</br></br>
+<div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/lendmate_wire.png" target="_blank">
+          <img src="../assets/lendmate/lendmate_wire.png" alt="wireframe mobile">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/lendmate_second_wire.png" target="_blank">
+          <img src="../assets/lendmate/lendmate_second_wire.png" alt="wireframe 2">
+        </a>
+      </div>
+    </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="../assets/bmd/zack.png" target="_blank">
+              <img src="../assets/lendmate/lendmate_third_wire.png" alt="onboarding">
+            </a>
+          </div>
+        </div>
+  </div>
+
+</br></br>
+
+<p>This ended up being quicker than I imagined thanks to my notes and user flows already being complete. The challenge was fitting the elements into that precious amount of iOS screen real estate. Particularly, I found the following areas to be challenging:
+</p>
+<ul class="case-list">
+
+  <li> Filtering items: What information did users care about? On which screen should they be able to adjust location?</li>
+  <li> Browsing items: How much information should be revealed before a user clicks "rent"</li>
+</ul>
+
+<p>I wanted to tell the brand story through a simple tutorial at the user’s first download. Sign up options would be email or Facebook. I debated using Nextdoor as an alternate sign up, but decided against it for now until it grows internationally. In the bottom navigation, I highlighted the “add” icon by increasing its size and position. This is a new app, and we should make it as easy as possible to snap a photo of an item to post on the platform. </p>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
 
 
 

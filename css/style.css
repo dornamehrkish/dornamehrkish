@@ -358,6 +358,26 @@ height: 32vh;
   margin-top: 12px;
 }
 
+.case-list {
+  list-style-type: circle;
+  margin-left: 4vh;
+}
+
+.quote-one {
+  border-left: #F4AC4D solid 1px;
+  padding: 3vh;
+  margin-left: 4vh;
+  font-style: italic;
+}
+.quote-two {
+  border-right: #F4AC4D solid 1px;
+  padding: 3vh;
+  margin-right: 4vh;
+font-style: italic;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     /*.container {
         padding-bottom: 132px;
@@ -387,5 +407,9 @@ height: 32vh;
      .card-bottom > p {
        font-size: 2vh;
      }
+
+     .cta-container a.btn:first-child {
+       margin-bottom: 15px;
+}
 
 }
