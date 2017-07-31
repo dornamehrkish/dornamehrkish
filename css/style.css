@@ -36,7 +36,7 @@ nav ul li:first-child {
 
 nav ul li a:hover {
   color: black;
-  font-weight: bolder;
+  font-weight: 700;
 
 }
 
@@ -312,6 +312,13 @@ height: 28vh;
 
 
 /*Case Study Page*/
+
+.sidebar {
+  transition: margin-top 0.2s ease-in-out;
+  -webkit-transition: margin-top 0.2s ease-in-out;
+  -moz-transition: margin-top 0.2s ease-in-out;
+  -o-transition: margin-top 0.2s ease-in-out;
+}
 
 .external-link {
   border-bottom: solid 3px #FCB3B0;
