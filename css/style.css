@@ -171,7 +171,12 @@ footer {
 }
 
 .lyft > .card-top {
-  background: #D9B0FC url(../assets/lyft/lyft-logo.png) center no-repeat;
+  background: #FCB3B0 url(../assets/lyft/lyft-logo.png) center no-repeat;
+  background-size: 200px;
+}
+
+.helpshift > .card-top {
+  background: #D9B0FC url(../assets/helpshift/push.png) center no-repeat;
   background-size: 200px;
 }
 
@@ -295,10 +300,12 @@ input[type="submit"] {
 input[type="text"]::placeholder {
     white-space: normal;
     text-align: center;
+    font-style: italic;
+
 }
 
 .comment-box {
-height: 32vh;
+height: 28vh;
 }
 
 

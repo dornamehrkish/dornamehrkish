@@ -35,7 +35,7 @@ ga('send', 'pageview');
     <ul>
       <li><a href="#" class="logo"><img src="//dornamehrkish.github.io/dornamehrkish/assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
       </li>
-      <li><a href="http://google.com/">Work</a>
+      <li><a href="landing.html">Work</a>
       </li>
       <li><a href="#">About</a>
       </li>
@@ -46,7 +46,7 @@ ga('send', 'pageview');
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <h1>Lendmate</h1>
+        <h1>Lendmate</h1></br>
     </div>
   </div>
   </div>
@@ -74,6 +74,17 @@ ga('send', 'pageview');
     <!-- main content area -->
     <div class="col-sm-9">
 
+      <div class="row">
+          <div class="col-md-12">
+            <div class="thumbnail text-center">
+              <a href="../assets/lendmate/hero.png" target="_blank">
+                <img src="../assets/lendmate/hero.png" alt="hero image" width="100%">
+              </a>
+            </div>
+          </div>
+        </div>
+
+</br>
     <p>Lendmate is a fictional iOS app that enables you to rent the things you need from people in your neighborhood. Users can quickly upload photos of rarely used items around their house (or in their garage) and set a daily rental price. Reservations and payments are all completed inside the app. </p>
 
   </br>
@@ -171,6 +182,7 @@ ga('send', 'pageview');
       </div>
     </div>
   </div>
+</br></br>
   <p>To keep the flow simple  for this first version, I removed a few user stories for later versions (ability to request an item to be fulfilled, and the ability to block users).  To outline the user flow of the onboarding and signup process, I referenced the UI for Mercari, a classifieds app that allows users to sell used clothing. Mercari allows you to browse items first before creating an account, which would later be important for this app to prevent any early dropoff. </p>
   <div class="row">
       <div class="col-md-12">
@@ -229,8 +241,8 @@ ga('send', 'pageview');
 
         <div class="col-md-4">
           <div class="thumbnail">
-            <a href="../assets/bmd/zack.png" target="_blank">
-              <img src="../assets/lendmate/lendmate_third_wire.png" alt="onboarding">
+            <a href="../assets/lendmate_third_wire.png" target="_blank">
+              <img src="../assets/lendmate/lendmate_third_wire.png" alt="wireframe">
             </a>
           </div>
         </div>
@@ -247,12 +259,77 @@ ga('send', 'pageview');
 </ul>
 
 <p>I wanted to tell the brand story through a simple tutorial at the user’s first download. Sign up options would be email or Facebook. I debated using Nextdoor as an alternate sign up, but decided against it for now until it grows internationally. In the bottom navigation, I highlighted the “add” icon by increasing its size and position. This is a new app, and we should make it as easy as possible to snap a photo of an item to post on the platform. </p>
+</br>
+<p>Another piece that was added during the wireframing phase was the “inbox” screen. This was a central place for users to manage all conversations. Prior to renting out an item, you may ask a question about it to a previous renter, or you may want to use that feature to set a meetup location. This could also be a central place for Lendmate to communicate to all its users in the app (versus email). Use-cases for this would be a feature announcement, or a promotion. </p>
+</br>
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail text-center">
+        <a href="../assets/lendmate/inbox.png" target="_blank">
+          <img src="../assets/lendmate/inbox.png" alt="inbox_screen">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</br>
+
+<p>As I converted everything to high fidelity, I realized that messages wouldn’t be the best way to track/manage all of a user’s planned rentals. If a user has listed 30 items on the platform and on an average day half of them are being utilized by others, then it would be a nightmare to remember it all. </p>
+<p>To solve this, I built a native calendar that would track all past, current and upcoming rentals.</p>
+</br>
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail text-center">
+        <a href="../assets/lendmate/schedule.png" target="_blank">
+          <img src="../assets/lendmate/schedule.png" alt="calender">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</br>
+
+<p>For rating and reviews, I leveraged Usabilty Hub’s Preference test feature to help me a finalize where a user would add feedback for an item. </p>
 
 
 
+<div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/Chelsea.png" target="_blank">
+          <img src="../assets/lendmate/rating_1.png" alt="add item feedback" style="width:100%">
+        </a>
+      </div>
+    </div>
 
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="../assets/lendmate/Mark.png" target="_blank">
+          <img src="../assets/lendmate/rating_2.png" alt="add feedback choice two" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
 
+</br>
+<p>Once completely finished, I wanted to challenge myself a bit further by practicing some Guerilla Usability Testing at a busy park in San Francisco. I approached a few strangers, telling them about my project and asked for a few minutes of their time. Here are the results:</p>
+<ul class="case-list">
+<li><strong>Total Users:</strong> three</li>
+<li><strong>Total Tasks:</strong> Two each; participants were asked to use Lendmate to search for a nearby item, as well as locating bookmarked items.</li>
+<li><strong>Completion rate of tasks:</strong> 80%</li>
+<li><strong>Average length per task:</strong> 50 seconds (above the goal of 30 seconds)</li>
+<li>The biggest piece of feedback was around text sizes and styles; it was too small to read for most users. </li>
+</ul>
 
+<p>The feedback I received from these users, as well as my mentor was invaluable. Below is the final prototype (created with Marvel):</p>
+
+<iframe src="https://marvelapp.com/1gaj321?emb=1" width="452" height="800" allowTransparency="true" frameborder="0" style="margin-left:14vh"></iframe>
+
+<h2 id="learn"> What I Learned</h2>
+
+<p>I’ve heard the term “feature creep” in previous jobs before, but it wasn’t until my role in this project that I felt its impact. I found myself actively going back to my initial project goals to prevent further additions to the app. </p>
+<p>This was also a lesson in setting up a more efficient design workflow. With every new element added in Sketch, I found myself working faster, thanks to  its symbol feature. I also heavily utilized <a href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/" class="external-link">Apple’s Human Interface Guidelines</a> to guide some decision making. </p>
+<p> As a next step, I would tighten up a few animations (for example, in the onboarding flow) using a tool like Principle. I would also look more closely at how users are interacting with each other in the “messages” feature. It’s my priority that users feel safe on the Lendmate app, so adding some rules to prevent abuse or foul language would be a necessary as it scales. An idea here is to pre-populate messages in the UI (canned responses). </p>
 
 
       </div>
