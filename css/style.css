@@ -11,7 +11,6 @@ nav {
   overflow: visible;
   background-color: white;
   margin-bottom: 30px;
-  /*align-items: center;*/
 }
 nav ul {
   margin: 0;
@@ -35,9 +34,8 @@ nav ul li:first-child {
 }
 
 nav ul li a:hover {
-  color: black;
   font-weight: 700;
-
+  color: black;
 }
 
 h1 {
@@ -45,6 +43,9 @@ h1 {
   font-weight: 200;
 }
 
+h2 {
+  margin-top: 4vh;
+}
 
 a {
   color: black;
@@ -314,10 +315,10 @@ height: 28vh;
 /*Case Study Page*/
 
 .sidebar {
-  transition: margin-top 0.2s ease-in-out;
-  -webkit-transition: margin-top 0.2s ease-in-out;
-  -moz-transition: margin-top 0.2s ease-in-out;
-  -o-transition: margin-top 0.2s ease-in-out;
+  transition: margin-top 0.4s ease-in-out;
+  -webkit-transition: margin-top 0.4s ease-in-out;
+  -moz-transition: margin-top 0.4s ease-in-out;
+  -o-transition: margin-top 0.4s ease-in-out;
 }
 
 .external-link {
@@ -340,7 +341,7 @@ height: 28vh;
 
 /* add hover behaviour */
 .mainmenu a:hover {
-    text-decoration: underline;
+    font-weight: 700;
 
 }
 
@@ -387,7 +388,7 @@ height: 28vh;
   border-right: #F4AC4D solid 1px;
   padding: 3vh;
   margin-right: 4vh;
-font-style: italic;
+  font-style: italic;
 }
 
 

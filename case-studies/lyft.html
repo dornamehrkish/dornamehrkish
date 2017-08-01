@@ -33,11 +33,11 @@ ga('send', 'pageview');
 <div class="container parent">
   <nav>
     <ul>
-      <li><a href="#" class="logo"><img src="//dornamehrkish.github.io/dornamehrkish/assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
+      <li><a href="../index.html" class="logo"><img src="//dornamehrkish.github.io/dornamehrkish/assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
       </li>
-      <li><a href="http://google.com/">Work</a>
+      <li><a href="landing.html">Work</a>
       </li>
-      <li><a href="#">About</a>
+      <li><a href="../about.html">About</a>
       </li>
 
     </ul>
@@ -58,16 +58,12 @@ ga('send', 'pageview');
     <div class="col-sm-3">
     <div class="sidebar">
         <ul class="mainmenu">
-   <li><a href="#problem">Problem</a></li>
-   <li><a href="#research">Research</a></li>
-   <li><a href="#">Process</a>
-     <ul class="submenu">
-       <li><a href="">Research</a></li>
-       <li><a href="#">User Flows</a></li>
-       <li><a href="#">UI</a></li>
-     </ul>
-   </li>
-   <li><a href="#">What I learned</a></li>
+   <li><a href="#background">Background</a></li>
+   <li><a href="#interview">User Interviews</a></li>
+   <li><a href="#use">Use Cases</a></li>
+    <li><a href="#content">Content </a></li>
+   <li><a href="#wireframe">Wireframes </a></li>
+   <li><a href="#learn">What I learned</a></li>
   </ul>
   </div>
 
@@ -96,8 +92,8 @@ ga('send', 'pageview');
       <p>This was a 6-month project that I helped lead with a small team. Because of my experience in content management and service design, I had the opportunity to re-design the help center using Zendesk’s infrastructure. </p>
 
 
-      <h2 id="process"> Process</h2>
-      <h4 id="interview"> User Interview</h2>
+      <h2 id="interview"> User Interviews</h2>
+
 
         <p>I wanted to observe drivers and passengers as they interacted with the current help center. I worked with our data team to get a list of the top 50 active drivers in San Francisco, and the top 50 active passengers. I sent out emails to these lists to recruit these users in the office for 30-minute usability tests. I incentivized them with a free lunch in the office, and an Amazon Gift Card. The results:</p>
         <ul class="case-list">
@@ -108,7 +104,64 @@ ga('send', 'pageview');
         </ul>
 
 <p>In the end, only three users showed up (most ended up cancelling, because they were driving with Lyft, or because of the rain). Still, I was able to capture some valuable, unbiased feedback from them how usability could be improved. </p>
-<p>My notes could be viewed <a href="https://docs.google.com/spreadsheets/d/1noEPT8dhNX0KI1qyAEZzbTjN-5FqFnYnu9bXbVSWeJA/edit?usp=sharing" class="external-link"> here.</a> I recorded these sessions using Lookback, which helped me show highlights to my team later on. </p>
+<p>My notes could be viewed <a href="https://docs.google.com/spreadsheets/d/1noEPT8dhNX0KI1qyAEZzbTjN-5FqFnYnu9bXbVSWeJA/edit?usp=sharing" class="external-link" target="_blank"> here.</a> I recorded these sessions using Lookback, which helped me show highlights to my team later on. </p>
+</br>
+<p>Old design, that categorized content by user, rather than solution (what if I'm a driver and a passenger?).</p>
+<div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <a href="../assets/lyft/old.png" target="_blank">
+          <img src="../assets/lyft/old.png" alt="old help center" style="width:70%">
+        </a>
+      </div>
+    </div>
+  </div>
+<h2 id="use"> Use Cases</h2>
+
+<p>I worked closely with my team (Voice of Customer)  to better understand what users were writing in about. Some use-cases, <a href="https://docs.google.com/spreadsheets/d/1a1ocRWUp2H4OCaSUtvyF8sKcU6Jc2ktNg-pQVyqEN9E/edit#gid=0" class="external-link" target="_blank">outlined here,</a> could be solved in the app, or through a knowledge base article. In other words, some questions could be replaced by a strong, self-service channel. </p>
+<p>
+To help us  begin mapping out our new contact form, I created a list of <a href="https://docs.google.com/document/d/1yQHLEs-CT16DKAbtDWXL3XdMrziVc5nIyWu1aFg0gKc/edit" class="external-link" target="_blank"> job stories,</a> followed by the preferred action for each. By focusing on the user’s intended outcome, we could design a more seamless experience as they try and contact Lyft.</p>
+
+
+
+<h2 id="content"> Content Inventory</h2>
+
+<p>As we were migrating to Zendesk, I spent almost a week conducting an audit of all current content in the old system. This included public help center content and also macros (canned responses) that customer support reps were using to send to customers. My goal at this point was to reduce the number of macros and craft a new information taxonomy for the new help center. I would have to consider my research so far, as well as Zendesk’s design constraints, before planning next steps.</p>
+
+<p>The full audit <a href="https://docs.google.com/spreadsheets/d/1K1iAiH34k7kaQxkz2FgBa8zMuD0gfrh1oo6Q2CZB0uM/edit#gid=0" class="external-link"> can be seen here.</a> For each help center article, you’ll see personal notes, as well as  survey results that measured the quality of each article. For the internal content, I ran a report of how often they were used, and only content if it was used at least 10 times within a week. I  also started to think about voice and tone for each macro, and how they could be more consistent.</p>
+
+<h2 id="wireframe"> Wireframe</h2>
+<p>Zendesk’s Help Center comes with a few pre-made templates, but it was clear we had too many categories to accommodate a theme. The front-end team would need to build out a custom theme. To help get them started, I worked with one of our Product Managers to finalize the site architecture. I provided a few wireframes from Balsamiq, and from there the Designers were able to turn it into a high-fidelity prototype. I helped them refine the copy</p>
+<div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../assets/lyft/wireframe_1.png" target="_blank">
+          <img src="../assets/lyft/wireframe_1.png" alt="wireframe 1" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../assets/lyft/wireframe_2.png" target="_blank">
+          <img src="../assets/lyft/wireframe_2.png" alt="wireframe 2" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../assets/lyft/wireframe_3.png" target="_blank">
+          <img src="../assets/lyft/wireframe_3.png" alt="wireframe 3" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+<h2 id="learn"> What I Learned</h2>
+<p>Before launching this to the public, I spent hours in the office debugging the new help center. Testing it on different devices, redirecting old links and adding conditional routing to the contact form were among the last minute tasks required. Without the team working together (sometimes until late hours),  we wouldn’t be able to launch the help center. The challenge for me during this project was balancing priorities. I was tackling this alongside my normal tasks, and I had trouble saying “no” at times. I’m now a better delegator.</p>
+
+<p>This also was one of my first times working closely with a Product Design team. I quickly grew a strong affinity for user feedback, and tried to incorporate it to all projects moving forward. In the weeks following the launch of the new help center, the design team conducted another round of moderated usability tests with a few drivers and passengers, and I made sure to volunteer as a note taker. The timing of this project (December) was perfect, in that it helped us shape better prioritize our feature roadmap for the following year.</p>
+
+<p> To explore this project live, visit <a href="https://help.lyft.com/hc/en-us" class="external-link"> Lyft's Help Center.</a></p>
     </div>
   </div>
 </div>
@@ -159,5 +212,6 @@ ga('send', 'pageview');
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
 </body>
 </html>

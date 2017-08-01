@@ -33,11 +33,11 @@ ga('send', 'pageview');
 <div class="container parent">
   <nav>
     <ul>
-      <li><a href="#" class="logo"><img src="//dornamehrkish.github.io/dornamehrkish/assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
+      <li><a href="../index.html" class="logo"><img src="//dornamehrkish.github.io/dornamehrkish/assets/dm.svg" width="40" height="40" alt="dorna_logo"></a>
       </li>
       <li><a href="landing.html">Work</a>
       </li>
-      <li><a href="#">About</a>
+      <li><a href="../about.html">About</a>
       </li>
 
     </ul>
@@ -57,16 +57,18 @@ ga('send', 'pageview');
     <div class="col-sm-3">
     <div class="sidebar">
         <ul class="mainmenu">
-   <li><a href="#problem">Problem</a></li>
-   <li><a href="#research">Research</a></li>
-   <li><a href="#">Process</a>
+   <li><a href="#tools">Problem</a></li>
+   <li><a href="research">Research</a>
      <ul class="submenu">
-       <li><a href="">Research</a></li>
-       <li><a href="#">User Flows</a></li>
-       <li><a href="#">UI</a></li>
+       <li><a href="#comp">Competitive Analysis</a></li>
+       <li><a href="#persona">Persona</a></li>
+       <li><a href="#flow">User Flows</a></li>
+
      </ul>
    </li>
-   <li><a href="#">What I learned</a></li>
+   <li><a href="#brand">Branding</a></li>
+    <li><a href="#wireframe">Wireframes</a></li>
+     <li><a href="#learn">What I Learned</a></li>
   </ul>
   </div>
 
@@ -105,7 +107,7 @@ ga('send', 'pageview');
 <li>Marvel</li>
 </ul>
 
-  <h2 id="research">Research and Problem Definition</h2>
+  <h2 id="research">Research</h2>
 <p> Early on in the research phase, I intended for Lendmate to be a borrowing app (rather than renting for cash). At its core, sharing unused items for free is one criteria of collaborative consumption. In a world of abundance, this model promotes people to interact with one another, feeling good that they helped a neighbor. The only problem with this is monetization. If borrowing items on this platform is free, how can we drive users to sign up and post their items? How can this compete with classifieds apps (Craigslist, Mercari, Letgo)?</p>
 
 <p>Highlights:</p>
@@ -122,11 +124,13 @@ ga('send', 'pageview');
   <p>Results showed that the majority of users rarely purchase expensive assets, and when they do get purchased, they aren’t used daily. Use tended to be seasonal.  Unsurprisingly (not shown in the graph above), users were split when asked if they would trust a stranger with something valuable. This then led to the next few question-- what kinds of items should be posted on this platform, and how can I use crisp, in-app messaging to maintain user confidence?
 </p>
 
-
+<h4 id="interview"> User Interview</h4>
 <p>To help answer these questions, I selected two respondents from the initial survey to interview. This revealed that users felt like they had too many belongings. One user mentioned that she makes an effort to donate excess stuff such as clothing or outdated electronics between 2 -3 times per year. Both users assumed that items they would offload were no longer valuable. </p>
 
 <p>Both users also mentioned that if they ever needed something quite expensive (in my interview I mentioned a lawnmower), they would first go to a friend or family member. If they knew their neighbors, they wouldn’t mind asking them too, but both had never tried. Both users were very open to sharing items if someone needed it. Getting paid was preferred as a way to secure the condition.</p>
 </br>
+
+<h4 id="persona"> User Interview</h4>
 <p>Using this data, I put together two personas:</p>
 </br>
 
@@ -148,8 +152,8 @@ ga('send', 'pageview');
     </div>
   </div>
 </br></br>
-
-  <h2 id="comp">Competitive Analysis</h2>
+<p> Creating these personas allowed me to focus needs and tasks that were driven by users themselves, rather than pulling from assumptions. </p>
+  <h4 id="comp">Competitive Analysis</h4>
   <p>I also analyzed a few potential competitors. I created three large categories for comparison: business profile, borrower experience and lender experience. Using the results I received from my initial user survey, I then listed out a few necessary features under each category and compared the experience for each. Full analysis is <a href="https://docs.google.com/spreadsheets/d/1zddbfi9n9VCVO_7xNO66AQpqwTlF18CXULvVjz9XuC0/edit#gid=0" class="external-link">done here.</a> </p>
   <div class="row">
       <div class="col-md-6">
@@ -170,7 +174,7 @@ ga('send', 'pageview');
     </div>
   </br></br>
   <p>I realized out of the three companies I chose, none were mobile first. Only one had an iOS app, but it had an extremely low user base in the United States, making it hard to look at real data. The opportunity for Lendmate is there. </p>
-<h2 id="flow"> User Flow</h2>
+<h4 id="flow"> User Flows</h4>
 <p>At this point, I documented my feature requirements into stories, making the decision to continue as a renting app.</p>
 
 <div class="row">
@@ -297,7 +301,7 @@ ga('send', 'pageview');
     <div class="col-md-6">
       <div class="thumbnail">
         <a href="../assets/lendmate/Chelsea.png" target="_blank">
-          <img src="../assets/lendmate/rating_1.png" alt="add item feedback" style="width:100%">
+          <img src="../assets/lendmate/Chelsea.png" alt="add item feedback" style="width:100%">
         </a>
       </div>
     </div>
@@ -305,7 +309,7 @@ ga('send', 'pageview');
     <div class="col-md-6">
       <div class="thumbnail">
         <a href="../assets/lendmate/Mark.png" target="_blank">
-          <img src="../assets/lendmate/rating_2.png" alt="add feedback choice two" style="width:100%">
+          <img src="../assets/lendmate/Mark.png" alt="add feedback choice two" style="width:100%">
         </a>
       </div>
     </div>
