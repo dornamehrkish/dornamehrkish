@@ -437,8 +437,12 @@ height: 28vh;
        margin-bottom: 15px;
 }
 
-.sidebar {
-  display: none;
-}
+      .sidebar {
+        display: none;
+      }
+
+      .mobile-img {
+        height: 22vh;
+      }
 
 }
