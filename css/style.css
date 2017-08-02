@@ -404,9 +404,6 @@ height: 28vh;
 
 
 @media only screen and (max-width: 768px) {
-    /*.container {
-        padding-bottom: 132px;
-    }*/
 
     .button-class > button {
       margin: 10px;
@@ -452,6 +449,14 @@ height: 28vh;
       .bmd > .card-top {
         background: #F4AC4D url(../assets/bmd/bmd-mock.png) center center no-repeat;
         background-size: 266px, cover;
+      }
+
+      input[type="submit"] {
+        margin-left: 19%;
+      }
+
+      .comment-box {
+        font-size: smaller;
       }
 
 }
