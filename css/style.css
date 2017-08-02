@@ -440,6 +440,7 @@ height: 28vh;
       }
       footer {
         margin-top: 0;
+
       }
 
       .cta-container {
@@ -457,6 +458,14 @@ height: 28vh;
 
       .comment-box {
         font-size: smaller;
+      }
+
+      .build {
+        display: none;
+      }
+
+      .form-text {
+        margin-bottom: 0;
       }
 
 }
