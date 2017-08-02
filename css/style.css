@@ -38,6 +38,11 @@ nav ul li a:hover {
   color: black;
 }
 
+nav ul li a:active {
+  font-weight: 700;
+  color: black;
+}
+
 h1 {
   text-align: center;
   font-weight: 200;
@@ -319,10 +324,16 @@ height: 28vh;
   -webkit-transition: margin-top 0.4s ease-in-out;
   -moz-transition: margin-top 0.4s ease-in-out;
   -o-transition: margin-top 0.4s ease-in-out;
+  border-left: 1px solid black;
 }
+
 
 .external-link {
   border-bottom: solid 3px #FCB3B0;
+}
+.external-link:hover {
+  font-weight: 700;
+  color: black;
 }
 
 .mainmenu, .submenu {
@@ -358,7 +369,7 @@ height: 28vh;
 
 .submenu a:hover {
 
-  text-decoration: underline;
+  font-weight: 700;
 }
 
 
@@ -379,13 +390,12 @@ height: 28vh;
 }
 
 .quote-one {
-  border-left: #F4AC4D solid 1px;
   padding: 3vh;
   margin-left: 4vh;
   font-style: italic;
 }
 .quote-two {
-  border-right: #F4AC4D solid 1px;
+
   padding: 3vh;
   margin-right: 4vh;
   font-style: italic;
@@ -425,6 +435,10 @@ height: 28vh;
 
      .cta-container a.btn:first-child {
        margin-bottom: 15px;
+}
+
+.sidebar {
+  display: none;
 }
 
 }
