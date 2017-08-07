@@ -452,9 +452,8 @@ height: 28vh;
         width: 100%;
       }
       footer {
-        margin-top: 0;
         background-color: #f9f9f9;
-        margin-top: 3vh;
+        margin: 3vh -8vh 0 -6vh;
 
       }
 
@@ -477,6 +476,11 @@ height: 28vh;
 
       .build {
         display: none;
+      }
+
+      .text-black {
+        font-size: 14px;
+        margin: 2vh;
       }
 
       .form-text {
