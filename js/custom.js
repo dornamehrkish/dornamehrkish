@@ -10,6 +10,7 @@ $(window).scroll(function(){
 });
 
 
+
 $(function() {
       $('.lazy').Lazy();
   });

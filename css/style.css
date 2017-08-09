@@ -328,12 +328,19 @@ height: 28vh;
 
 /*Case Study Page*/
 
+.sticky-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sticky-top {
+  opacity: .9;
+}
 .sidebar {
   transition: margin-top 0.4s ease-in-out;
   -webkit-transition: margin-top 0.4s ease-in-out;
   -moz-transition: margin-top 0.4s ease-in-out;
   -o-transition: margin-top 0.4s ease-in-out;
-  border-left: 1px solid black;
 }
 
 
@@ -362,6 +369,7 @@ height: 28vh;
 /* add hover behaviour */
 .mainmenu a:hover {
     font-weight: 700;
+    border-left: 1px solid black;
 
 }
 
