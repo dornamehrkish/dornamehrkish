@@ -495,4 +495,9 @@ height: 28vh;
         margin-bottom: 0;
       }
 
+      input[type="text"]::placeholder {
+        display: none;
+
+      }
+
 }
