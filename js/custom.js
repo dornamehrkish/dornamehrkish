@@ -8,3 +8,8 @@ $(window).scroll(function(){
     $sidebar.css({'margin-top': 0});
   }
 });
+
+
+$(function() {
+      $('.lazy').Lazy();
+  });
