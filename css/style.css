@@ -230,6 +230,9 @@ font-weight: 700;
 
 /*About Me*/
 
+p {
+  line-height: 2rem;
+}
 .about-photo {
   max-height: 100%;
   max-width: 100%;
@@ -288,7 +291,7 @@ text-align: justify;
 input[type="text"],
 input[type="email"]{
   padding: 10px;
-  border: solid .1px black;
+  border: solid 1px black;
   border-radius: 3px;
   width: 100%;
   margin-bottom: 15px;
